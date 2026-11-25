@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>河南保得利机械制造有限公司 · 固废再生撕碎分选设备源头厂家</title>
+  <meta name="description" content="河南保得利机械制造有限公司位于郑州巩义，集研发、生产、销售、方案设计、安装运维于一体，主营双轴/单轴撕碎机、金属撕碎机、废钢破碎机、涡电流分选机、磁选机及成套分选线，产品销往国内多省市及30多个海外市场。" />
+  <style>
+    /* ============ 基础与变量 ============ */
+    :root {
+      --brand: #0284c7;
+      --brand-dark: #075985;
+      --brand-soft: #e0f2fe;
+      --green: #54c328;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #0f172a;
+      --text-soft: #475569;
+      --line: #e2e8f0;
+      --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      --radius: 16px;
+      --maxw: 1120px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      background: var(--bg); color: var(--text); line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+    .container { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
+    section { padding: 84px 0; }
+    .section-tag {
+      display: inline-block; font-size: 13px; letter-spacing: 0.14em;
+      color: var(--brand); font-weight: 600; margin-bottom: 12px;
+    }
+    h2 { font-size: 30px; font-weight: 700; margin-bottom: 14px; }
+    .lead { color: var(--text-soft); max-width: 660px; }
+    .center { text-align: center; }
+    .center .lead { margin: 0 auto; }
+
+    .btn-row { display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px;
+      border-radius: 12px; font-size: 15px; font-weight: 600; cursor: pointer;
+      border: 1px solid transparent; transition: transform .15s, box-shadow .15s, background .15s;
+    }
+    .btn-primary { background: var(--brand); color: #fff; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+    .btn-ghost-light { border-color: rgba(255,255,255,.4); color: #fff; }
+    .btn-ghost-light:hover { background: rgba(255,255,255,.12); }
+    .btn-ghost { border-color: var(--line); background: var(--surface); color: var(--text); }
+    .btn-ghost:hover { border-color: var(--brand); color: var(--brand); }
+
+    /* ============ 导航 ============ */
+    header {
+      position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,.92);
+      backdrop-filter: blur(10px); border-bottom: 1px solid var(--line);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .logo { font-weight: 700; font-size: 18px; display: flex; align-items: center; gap: 10px; }
+    .logo-mark { width: 34px; height: 34px; border-radius: 10px; background: var(--brand);
+      color: #fff; display: flex; align-items: center; justify-content: center; font-size: 15px; }
+    .logo-img { height: 40px; width: auto; display: block; }
+    .footer-logo { background: #fff; border-radius: 12px; padding: 8px 14px; display: inline-flex; }
+    .nav-links { display: flex; gap: 28px; }
+    .nav-links a { color: var(--text-soft); font-size: 15px; transition: color .2s; }
+    .nav-links a:hover, .nav-links a.active { color: var(--brand); }
+    .nav-cta { padding: 10px 20px; }
+    .menu-btn { display: none; background: none; border: 1px solid var(--line); border-radius: 10px;
+      width: 42px; height: 42px; cursor: pointer; font-size: 18px; color: var(--text); }
+
+    /* ============ Hero ============ */
+    .hero {
+      background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand) 55%, #00a5ec 100%);
+      color: #fff; padding: 100px 0 90px; position: relative; overflow: hidden;
+    }
+    .hero::after { content: ""; position: absolute; right: -120px; top: -120px; width: 380px; height: 380px; border-radius: 50%; background: rgba(255,255,255,.08); }
+    .hero::before { content: ""; position: absolute; left: -80px; bottom: -140px; width: 280px; height: 280px; border-radius: 50%; background: rgba(255,255,255,.06); }
+    .hero .container { position: relative; z-index: 1; }
+    .hero h1 { font-size: 38px; line-height: 1.3; margin: 18px 0 20px; max-width: 760px; }
+    .hero p { font-size: 17px; color: rgba(255,255,255,.9); max-width: 640px; margin-bottom: 30px; }
+    .hero-badge { display: inline-block; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,.15); font-size: 13px; }
+    .hero-tags { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 30px; }
+    .hero-tags span { font-size: 13px; padding: 6px 12px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px; }
+
+    /* ============ 优势 ============ */
+    .adv-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 40px; }
+    .adv-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; transition: transform .18s, box-shadow .18s; }
+    .adv-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .adv-ico { width: 48px; height: 48px; border-radius: 14px; background: var(--brand-soft); display: flex; align-items: center; justify-content: center; font-size: 22px; margin-bottom: 18px; }
+    .adv-card h3 { font-size: 17px; margin-bottom: 8px; }
+    .adv-card p { color: var(--text-soft); font-size: 14px; }
+
+    /* ============ 产品设备 ============ */
+    .products { background: var(--surface); }
+    .prod-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    .prod-card { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; transition: transform .18s, box-shadow .18s; display: flex; flex-direction: column; }
+    .prod-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+    .prod-thumb { height: 130px; display: flex; align-items: center; justify-content: center; font-size: 34px; color: #fff; }
+    .prod-thumb-img { height: 210px; overflow: hidden; background: var(--bg); }
+    .prod-thumb-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .about-photo img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); display: block; }
+    .about-photo .photo-caption { margin-top: 10px; font-size: 13px; color: var(--text-soft); text-align: center; }
+    .p1 { background: linear-gradient(135deg, #54c328, #00a5ec); }
+    .p2 { background: linear-gradient(135deg, #334155, #64748b); }
+    .p3 { background: linear-gradient(135deg, #075985, #0284c7); }
+    .prod-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+    .prod-body h3 { font-size: 18px; margin-bottom: 10px; }
+    .prod-body p { color: var(--text-soft); font-size: 14px; }
+    .tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+    .tag { font-size: 12px; padding: 5px 11px; border-radius: 999px; background: var(--brand-soft); color: var(--brand); }
+
+    /* ============ 数据统计 ============ */
+    .stats { background: var(--brand-dark); color: #fff; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+    .stat-num { font-size: 38px; font-weight: 700; }
+    .stat-num span { font-size: 20px; }
+    .stat-text { font-size: 26px; font-weight: 700; }
+    .stat-label { color: rgba(255,255,255,.8); margin-top: 6px; font-size: 15px; }
+
+    /* ============ 关于 ============ */
+    .about-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 48px; align-items: center; }
+    .about-points { display: grid; gap: 16px; margin-top: 24px; }
+    .about-points li { display: flex; gap: 12px; color: var(--text-soft); }
+    .about-points li::before { content: "✓"; color: var(--brand); font-weight: 700; }
+    .about-panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow); }
+    .about-panel h3 { margin-bottom: 12px; }
+
+    /* ============ 物料标签墙 ============ */
+    .material-wall { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .material-wall .chip { padding: 10px 18px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); font-size: 15px; }
+    .material-note { margin-top: 22px; color: var(--text-soft); }
+
+    /* ============ 服务 ============ */
+    .service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+    .service-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px; }
+    .service-card .step { display: inline-block; font-size: 13px; font-weight: 700; color: #fff; background: var(--brand); border-radius: 999px; padding: 4px 12px; margin-bottom: 16px; }
+    .service-card h3 { font-size: 18px; margin-bottom: 12px; }
+    .service-card ul { display: grid; gap: 10px; }
+    .service-card li { display: flex; gap: 10px; color: var(--text-soft); font-size: 14px; }
+    .service-card li::before { content: "•"; color: var(--brand); }
+
+    /* ============ 联系 ============ */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 36px; margin-top: 36px; }
+    .contact-info { display: grid; gap: 20px; align-content: start; }
+    .contact-item { display: flex; gap: 16px; }
+    .contact-item .ico { width: 44px; height: 44px; border-radius: 12px; background: var(--brand-soft); display: flex; align-items: center; justify-content: center; font-size: 19px; flex: none; }
+    .contact-item h4 { font-size: 15px; }
+    .contact-item p { color: var(--text-soft); font-size: 14px; }
+    .contact-phone { font-size: 22px; font-weight: 700; color: var(--brand); }
+    .form-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow); }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .field { margin-bottom: 16px; }
+    .field label { display: block; font-size: 14px; font-weight: 600; margin-bottom: 6px; }
+    .field input, .field textarea, .field select { width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; font: inherit; background: var(--bg); color: var(--text); }
+    .field textarea { resize: vertical; min-height: 110px; }
+    .form-note { font-size: 13px; color: var(--text-soft); margin-top: 12px; }
+
+    /* ============ 页脚 ============ */
+    footer { background: #0f172a; color: #cbd5e1; padding: 56px 0 0; }
+    .footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 36px; padding-bottom: 36px; }
+    footer h4 { color: #fff; font-size: 15px; margin-bottom: 16px; }
+    footer li { margin-bottom: 10px; font-size: 14px; }
+    footer a:hover { color: #fff; }
+    .footer-about p { font-size: 14px; margin-top: 12px; max-width: 300px; }
+    .footer-bottom { border-top: 1px solid #1e293b; padding: 20px 0; text-align: center; font-size: 13px; color: #94a3b8; }
+
+    /* ============ 响应式 ============ */
+    @media (max-width: 960px) {
+      .adv-grid, .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .prod-grid, .service-grid { grid-template-columns: 1fr; }
+      .about-grid, .contact-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 720px) {
+      .hero h1 { font-size: 28px; }
+      .nav-links { position: absolute; top: 68px; left: 0; right: 0; background: var(--surface); flex-direction: column; gap: 0; border-bottom: 1px solid var(--line); display: none; }
+      .nav-links.open { display: flex; }
+      .nav-links li { padding: 14px 24px; border-top: 1px solid var(--line); }
+      .nav-cta { display: none; }
+      .menu-btn { display: inline-flex; align-items: center; justify-content: center; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ 导航 ============ -->
+  <header>
+    <div class="container nav">
+      <a href="#top" class="logo"><img class="logo-img" src="assets/logo.png" alt="保得利 BAODELI" /></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#products">产品设备</a></li>
+        <li><a href="#lines">分选生产线</a></li>
+        <li><a href="#materials">适用物料</a></li>
+        <li><a href="#about">关于我们</a></li>
+        <li><a href="#service">服务支持</a></li>
+        <li><a href="#contact">联系我们</a></li>
+      </ul>
+      <a href="#contact" class="btn btn-primary nav-cta">咨询报价</a>
+      <button class="menu-btn" id="menuBtn" aria-label="打开菜单">☰</button>
+    </div>
+  </header>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero" id="top">
+    <div class="container">
+      <span class="hero-badge">固废再生撕碎分选装备 · 源头生产厂家</span>
+      <h1>河南保得利机械制造有限公司</h1>
+      <p>坐落于河南省郑州市巩义市——国内知名的破碎、再生资源装备产业集群地。依托本地成熟的机械加工配套优势，集研发、生产、销售、方案设计、安装运维于一体，主打固废再生撕碎分选设备，产品销往国内多省市及 30 多个海外市场。</p>
+      <div class="hero-tags">
+        <span>研发 · 生产 · 销售</span>
+        <span>方案设计</span>
+        <span>安装运维</span>
+        <span>承接外贸订单</span>
+      </div>
+      <div class="btn-row">
+        <a href="#contact" class="btn btn-primary">电话咨询 / 方案选型</a>
+        <a href="#about" class="btn btn-ghost-light">到厂看机试料</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 核心优势 ============ -->
+  <section id="advantages">
+    <div class="container">
+      <div class="center">
+        <span class="section-tag">核心优势</span>
+        <h2>源头厂家 · 出厂全检 · 长期配件保障</h2>
+        <p class="lead">自有车间与试机场地，核心团队深耕破碎撕碎装备行业，围绕设备稳定性、耐磨寿命与客户停机成本持续优化。</p>
+      </div>
+      <div class="adv-grid" id="advGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 产品设备 ============ -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="center">
+        <span class="section-tag">产品设备</span>
+        <h2>撕碎与分选设备</h2>
+        <p class="lead">面向再生资源回收行业，处理废金属、塑料、断桥铝、生活垃圾、工业固废等物料，撕碎后配套分选，提升金属纯度与成品售价；涡电流分选机、磁选机可配套整线选型。</p>
+      </div>
+      <div class="prod-grid" id="prodGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 数据统计 ============ -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid" id="statsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 关于我们 ============ -->
+  <section id="about">
+    <div class="container about-grid">
+      <div>
+        <span class="section-tag">关于我们</span>
+        <h2>深耕破碎撕碎装备的源头生产厂家</h2>
+        <p class="lead">公司自有装配车间、机加工区域、独立试机场地，配备加工、焊接、装配、整机试机检测工序；每台设备出厂前均进行空载、负载试机检验，配套完整检测流程。核心团队长期深耕破碎撕碎装备行业，针对行业普遍痛点持续优化。</p>
+        <ul class="about-points" id="aboutPoints"></ul>
+      </div>
+      <div class="about-photo">
+        <img src="assets/factory-aerial.jpg" alt="保得利机械厂区车间实景" loading="lazy" />
+        <div class="photo-caption">厂区车间实景 · 可预约到厂看机、现场试料</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 适用物料 ============ -->
+  <section id="materials">
+    <div class="container">
+      <div class="center">
+        <span class="section-tag">适用物料</span>
+        <h2>可处理的再生资源物料</h2>
+        <p class="lead">撕碎 + 分选工艺搭配使用，分选后提升金属纯度，提高成品售价。</p>
+      </div>
+      <div class="material-wall" id="materialWall"></div>
+      <p class="material-note">更多物料选型与出料方案，可联系我们免费咨询、带料到厂试机确认效果。</p>
+    </div>
+  </section>
+
+  <!-- ============ 服务支持 ============ -->
+  <section id="service">
+    <div class="container">
+      <div class="center">
+        <span class="section-tag">服务支持</span>
+        <h2>售前 · 售中 · 售后全流程保障</h2>
+      </div>
+      <div class="service-grid" id="serviceGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ 联系我们 ============ -->
+  <section id="contact">
+    <div class="container">
+      <div class="center">
+        <span class="section-tag">联系我们</span>
+        <h2>咨询设备选型与生产线方案</h2>
+        <p class="lead">欢迎来电沟通物料情况、产能需求，或预约到厂看机试料。表单为静态演示，暂不在线提交，可直接电话联系。</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info" id="contactInfo"></div>
+        <div class="form-card">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="field">
+                <label for="name">您的称呼</label>
+                <input id="name" type="text" placeholder="请输入姓名" />
+              </div>
+              <div class="field">
+                <label for="phone">联系电话</label>
+                <input id="phone" type="tel" placeholder="请输入手机号" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="material">处理物料 / 需求</label>
+              <input id="material" type="text" placeholder="如：废钢、断桥铝、塑料等" />
+            </div>
+            <div class="field">
+              <label for="msg">需求描述</label>
+              <textarea id="msg" placeholder="简单描述物料种类、产能要求或现场情况"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">提交咨询</button>
+            <p class="form-note">演示表单：此处不会真实发送数据；如需在线收线索，可后续接入表单服务或后端接口。</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 页脚 ============ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo"><img class="logo-img" src="assets/logo.png" alt="保得利 BAODELI" /></div>
+          <p>河南保得利机械制造有限公司 · 固废再生撕碎分选设备源头厂家，产品销往国内多省市及 30 多个海外市场。</p>
+        </div>
+        <div>
+          <h4>撕碎设备</h4>
+          <ul>
+            <li>双轴撕碎机</li>
+            <li>单轴撕碎机</li>
+            <li>金属撕碎机 / 废钢破碎机</li>
+            <li>易拉罐 / 彩钢瓦 / 塑料破碎机</li>
+          </ul>
+        </div>
+        <div>
+          <h4>分选与生产线</h4>
+          <ul>
+            <li>涡电流分选机</li>
+            <li>磁选机</li>
+            <li>断桥铝分选线</li>
+            <li>废铝回收线 / 家电拆解分选线</li>
+          </ul>
+        </div>
+        <div>
+          <h4>联系方式</h4>
+          <ul>
+            <li>电话：17836901798</li>
+            <li>地址：河南省郑州市巩义市</li>
+            <li>支持到厂看机、现场试料</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 河南保得利机械制造有限公司 版权所有 · 本站为静态展示试用版，正式对外前请补充邮箱、备案号等信息</div>
+    </div>
+  </footer>
+
+  <script>
+    /* ============ 数据（内联，便于修改） ============ */
+    const advantages = [
+      { ico: "🏭", title: "源头厂家直供", desc: "自有装配车间、机加工区域与独立试机场地，加工、焊接、装配、整机试机检测工序齐全。" },
+      { ico: "✅", title: "出厂严格检验", desc: "每台设备出厂前均进行空载、负载试机检验，配套完整检测流程，可到厂看机、现场试料。" },
+      { ico: "🛠️", title: "深耕行业优化", desc: "核心团队长期深耕破碎撕碎装备，优化腔体结构、流道、刀轴与衬板材质，针对性解决行业痛点。" },
+      { ico: "📦", title: "配件长期保障", desc: "厂区常备易损件库存，原厂配件长期供应，常用耐磨件快速发货，降低停机维修频次。" }
+    ];
+
+    const products = [
+      {
+        img: "assets/double-shaft-shredder.jpg", title: "双轴撕碎机",
+        desc: "双轴剪切撕碎，适合废金属、塑料、轻薄料等多种物料，出料粒度可调，为后续分选做准备。",
+        tags: ["双轴撕碎", "废金属 / 塑料撕碎"]
+      },
+      {
+        img: "assets/metal-crusher.jpg", title: "金属破碎机",
+        desc: "重型破碎废钢、废铝等金属料，破碎后料团紧实，便于转运、出料与后续分选。",
+        tags: ["废钢破碎", "废铝破碎"]
+      },
+      {
+        img: "assets/can-crusher.jpg", title: "易拉罐破碎机",
+        desc: "针对易拉罐、轻薄金属罐进行破碎处理，提升料料密度与回收价值。",
+        tags: ["易拉罐破碎", "轻薄料破碎"]
+      },
+      {
+        img: "assets/grinder.jpg", title: "干磨机",
+        desc: "滚筒式干磨设备，用于物料研磨、筛分与后续处理，可配套生产线整体配置。",
+        tags: ["干磨设备", "滚筒研磨"]
+      },
+      {
+        img: "assets/eddy-current-separator.jpg", title: "涡电流分选机",
+        desc: "用于断桥铝、铝塑分离及金属与非金属分选，与撕碎机配套使用，提升金属纯度与成品售价。",
+        tags: ["涡电流分选", "断桥铝分选", "铝塑分离", "金属非金属分选"]
+      },
+      {
+        img: "assets/production-line.jpg", title: "成套分选生产线",
+        desc: "撕碎、输送、分选环节衔接配套，按物料与场地规划布局，可上门安装调试。",
+        tags: ["断桥铝分选线", "废铝回收线", "家电拆解分选线"]
+      },
+      {
+        img: "assets/line-model.jpg", title: "整线方案设计",
+        desc: "提供整线 3D 方案模型与布局规划，售前明确工艺流程、设备配置与投资概算。",
+        tags: ["方案设计", "整线规划", "磁选机配套"]
+      }
+    ];
+
+    const stats = [
+      { num: 30, suffix: "+", label: "海外市场" },
+      { num: 100, suffix: "%", label: "出厂试机检验" },
+      { text: "全流程", label: "售前 · 售中 · 售后" },
+      { text: "终身", label: "技术咨询服务" }
+    ];
+
+    const aboutPoints = [
+      "针对卡料堵机、出料粒度不均问题，优化腔体结构与流道设计",
+      "针对机身高温、粉尘外泄问题，改进散热与密封结构",
+      "针对耐磨件损耗快，优化刀轴与衬板材质，延长耐磨寿命",
+      "提升设备稳定性，降低停机维修频次与耗材成本"
+    ];
+
+    const materials = ["废钢", "废铝", "铝合金", "断桥铝", "铁皮", "彩钢瓦", "易拉罐", "塑料", "橡胶", "编织袋", "废金属", "家电外壳", "生活垃圾", "工业废料"];
+
+    const services = [
+      { step: "售前", title: "方案选型与咨询", items: ["免费技术咨询、物料方案选型", "场地布局规划、生产线投资概算", "支持客户带原料到厂试机，直观看出料效果"] },
+      { step: "售中", title: "生产进度与交付", items: ["生产进度同步，出厂前整机试机", "发货前核对清单，安排装车", "可委派工程师上门，现场安装、调试、接线"] },
+      { step: "售后", title: "培训与长期维护", items: ["现场培训操作人员，讲解操作、保养与易损件更换", "建立售后对接通道，及时故障响应", "原厂配件长期供应，常用耐磨件快速发货", "终身技术咨询，定期指导保养巡检"] }
+    ];
+
+    const contacts = [
+      { ico: "📞", title: "销售热线", text: "17836901798" },
+      { ico: "📍", title: "公司地址", text: "河南省郑州市巩义市（可预约到厂看机、现场试料）" },
+      { ico: "🕘", title: "工作时间", text: "周一至周五，欢迎来电咨询" },
+      { ico: "🌍", title: "业务范围", text: "国内再生资源回收企业，并承接外贸订单，产品销往 30 多个海外市场" }
+    ];
+
+    /* ============ 渲染 ============ */
+    document.getElementById("advGrid").innerHTML = advantages.map(a => `
+      <div class="adv-card"><div class="adv-ico">${a.ico}</div><h3>${a.title}</h3><p>${a.desc}</p></div>`).join("");
+
+    document.getElementById("prodGrid").innerHTML = products.map(p => `
+      <article class="prod-card">
+        <div class="prod-thumb-img"><img src="${p.img}" alt="${p.title}" loading="lazy" /></div>
+        <div class="prod-body">
+          <h3>${p.title}</h3><p>${p.desc}</p>
+          <div class="tag-row">${p.tags.map(t => `<span class="tag">${t}</span>`).join("")}</div>
+        </div>
+      </article>`).join("");
+
+    document.getElementById("aboutPoints").innerHTML = aboutPoints.map(x => `<li>${x}</li>`).join("");
+
+    document.getElementById("materialWall").innerHTML = materials.map(m => `<span class="chip">${m}</span>`).join("");
+
+    document.getElementById("serviceGrid").innerHTML = services.map(s => `
+      <div class="service-card">
+        <span class="step">${s.step}</span><h3>${s.title}</h3>
+        <ul>${s.items.map(i => `<li>${i}</li>`).join("")}</ul>
+      </div>`).join("");
+
+    document.getElementById("contactInfo").innerHTML = contacts.map(c => `
+      <div class="contact-item"><div class="ico">${c.ico}</div><div><h4>${c.title}</h4><p class="${c.title === '销售热线' ? 'contact-phone' : ''}">${c.text}</p></div></div>`).join("");
+
+    /* ============ 数字滚动动画（仅对有数字的卡片） ============ */
+    const statsEl = document.getElementById("statsGrid");
+    statsEl.innerHTML = stats.map((s, i) => {
+      const inner = s.num !== undefined
+        ? `<div class="stat-num" data-target="${s.num}">0</div>`
+        : `<div class="stat-text">${s.text}</div>`;
+      return `<div>${inner}<div class="stat-label">${s.label}</div></div>`;
+    }).join("");
+    const statNums = [...statsEl.querySelectorAll(".stat-num")];
+    let counted = false;
+    function animateStats() {
+      if (counted) return; counted = true;
+      statNums.forEach(el => {
+        const target = +el.dataset.target;
+        const suffix = stats.find(s => s.num === target).suffix;
+        const dur = 1200; const start = performance.now();
+        function tick(now) {
+          const p = Math.min((now - start) / dur, 1);
+          el.innerHTML = Math.round(target * p) + `<span>${suffix}</span>`;
+          if (p < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      });
+    }
+    const statObserver = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { animateStats(); statObserver.disconnect(); } });
+    }, { threshold: 0.4 });
+    statObserver.observe(statsEl);
+
+    /* ============ 移动端菜单 ============ */
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+    menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
+    navLinks.querySelectorAll("a").forEach(a =>
+      a.addEventListener("click", () => navLinks.classList.remove("open")));
+
+    /* ============ 导航滚动高亮 ============ */
+    const sections = [...document.querySelectorAll("section[id]")];
+    const linkMap = Object.fromEntries([...navLinks.querySelectorAll("a")].map(a => [a.getAttribute("href").slice(1), a]));
+    window.addEventListener("scroll", () => {
+      let current = "";
+      sections.forEach(s => { if (window.scrollY >= s.offsetTop - 120) current = s.id; });
+      Object.entries(linkMap).forEach(([id, a]) => a.classList.toggle("active", id === current));
+    });
+
+    /* ============ 演示表单 ============ */
+    document.getElementById("contactForm").addEventListener("submit", e => {
+      e.preventDefault();
+      alert("这是静态演示页面，表单暂不在线提交。如需收集客户留言，可后续接入表单服务或后端接口；也可直接拨打销售热线 17836901798。");
+    });
+  </script>
+</body>
+</html>
